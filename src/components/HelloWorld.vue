@@ -1,8 +1,8 @@
 <!--
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-03-26 07:30:12
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2023-03-26 10:27:22
+ * @LastEditors: hibana2077 hibana2077@gmail.com
+ * @LastEditTime: 2023-03-26 11:41:48
  * @FilePath: \vuetify-project\src\components\HelloWorld.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -55,6 +55,7 @@
             size="x-large"
             target="_blank"
             variant="flat"
+            id="hover"
           >
           <router-link to="/blog" class="text-decoration-none" style="color: inherit;">
             <v-icon
@@ -97,7 +98,6 @@ import { ref, onMounted } from 'vue';
 import gsap from 'gsap';
 
 const container = ref(null);
-const content = ref(null);
 const btn_animate = ref(null);
 
 onMounted(() => {
@@ -118,4 +118,5 @@ onMounted(() => {
     ease: 'back.out(1.7)',
   });
 });
+
 </script>
