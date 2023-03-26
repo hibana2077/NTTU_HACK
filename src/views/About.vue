@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-03-26 07:58:57
  * @LastEditors: hibana2077 hibana2077@gmail.com
- * @LastEditTime: 2023-03-26 16:21:30
+ * @LastEditTime: 2023-03-26 20:21:34
  * @FilePath: \vuetify-project\src\views\About.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -124,8 +124,9 @@
         <v-divider class="my-12"></v-divider>
         </v-container>
         <v-container>
-            <v-row>
-                <v-col cols="4" class="mt-15">
+            <v-row align="start">
+                <v-col cols="2"></v-col>
+                <v-col cols="4" class="mt-15 align-center">
                     <h1 >
                         加入我們
                     </h1>
@@ -138,9 +139,9 @@
                         </a>
                     </v-btn>
                 </v-col>
-                <v-col cols="4"></v-col>
+                <v-col cols="2"></v-col>
                 <v-col cols="4">
-                    <v-img src="../assets/jigsaw.png" max-width="100%"></v-img>
+                    <v-img src="../assets/jigsaw.png" max-width="65%"></v-img>
                 </v-col>
             </v-row>
         </v-container>
