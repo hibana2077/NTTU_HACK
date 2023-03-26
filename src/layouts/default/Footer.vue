@@ -1,0 +1,45 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2023-03-26 07:35:49
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2023-03-26 09:26:24
+ * @FilePath: \vuetify-project\src\layouts\default\Footer.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<template>
+    <v-footer class="bg-grey-lighten-1" :color="pr">
+      <v-row justify="center" no-gutters>
+        <v-btn
+          v-for="link in links"
+          :key="link"
+          color="white"
+          variant="text"
+          class="mx-2"
+          rounded="xl"
+          size="x-large"
+        >
+          {{ link }}
+        </v-btn>
+        <v-col class="text-center mt-4" cols="12">
+            &copy; {{ new Date().getFullYear() }} — <strong>NTTU HACK</strong>
+        </v-col>
+      </v-row>
+    </v-footer>
+</template>
+
+<script>
+import { ref } from 'vue'
+
+export default {
+    data: () => ({
+      links: [
+        '首頁',
+        '關於我們',
+        '幹部',
+        '演講邀請',
+        '聯繫我們',
+      ],
+      pr: ref("primary"),
+    }),
+  }
+</script>
