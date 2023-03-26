@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-03-26 07:30:12
  * @LastEditors: hibana2077 hibana2077@gmail.com
- * @LastEditTime: 2023-03-26 13:07:42
+ * @LastEditTime: 2023-03-26 21:38:46
  * @FilePath: \vuetify-project\src\components\HelloWorld.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -10,13 +10,12 @@
   <v-container class="fill-height">
     <v-responsive class="d-flex align-center text-center fill-height">
       <div ref="container">
-      <v-img
-        contain
-        height="300"
-        src="@/assets/logo.svg"
-      />
+      <v-avatar
+        image="../assets/nttu_hack.svg"
+        size="265"
+        ></v-avatar>
 
-      <h1 class="text-h2 font-weight-bold">東大資安社</h1>
+      <h1 class="text-h2 font-weight-bold mt-5">東大資安社</h1>
 
       <h2 class="text-h5 font-weight-light">National Taitung University HACK</h2>
 
