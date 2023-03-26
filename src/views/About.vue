@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-03-26 07:58:57
  * @LastEditors: hibana2077 hibana2077@gmail.com
- * @LastEditTime: 2023-03-26 22:02:08
+ * @LastEditTime: 2023-03-26 22:37:07
  * @FilePath: \vuetify-project\src\views\About.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -20,6 +20,7 @@
             </v-col>
             <v-col cols="1"></v-col>
             <v-col cols="7">
+            <div ref="slide_in">
             <v-container>
                 <v-row>
                 <v-col cols="12">
@@ -30,6 +31,7 @@
                 </v-col>
                 </v-row>
                 </v-container>
+            </div>
             </v-col>
         </v-row>
         </v-container>
@@ -160,6 +162,7 @@ onMounted(() => {
     gsap.from(slide_in.value, {
         delay: 0.5,
         duration: 1,
+        rotate: 360,
         y: '-100',
         x: '-100',
         autoAlpha: 0,
