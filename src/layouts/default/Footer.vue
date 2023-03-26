@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-03-26 07:35:49
  * @LastEditors: hibana2077 hibana2077@gmail.com
- * @LastEditTime: 2023-03-26 10:43:15
+ * @LastEditTime: 2023-03-26 12:48:20
  * @FilePath: \vuetify-project\src\layouts\default\Footer.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -35,15 +35,13 @@ export default {
       links: [
         '首頁',
         '關於我們',
-        '幹部',
-        '演講邀請',
+        '加入我們',
         '聯繫我們',
       ],
       route: [
         '/',
         '/about',
-        '/member',
-        '/talk',
+        '/join',
         '/contact',
       ],
       pr: ref("primary"),

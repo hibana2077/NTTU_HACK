@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-03-26 07:30:12
  * @LastEditors: hibana2077 hibana2077@gmail.com
- * @LastEditTime: 2023-03-26 12:32:29
+ * @LastEditTime: 2023-03-26 13:07:42
  * @FilePath: \vuetify-project\src\components\HelloWorld.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -15,14 +15,17 @@
         height="300"
         src="@/assets/logo.svg"
       />
-      
-      <div class="text-body-12 font-weight-light">歡迎來到</div>
 
       <h1 class="text-h2 font-weight-bold">東大資安社</h1>
 
       <h2 class="text-h5 font-weight-light">National Taitung University HACK</h2>
 
-      <h3 class="text-h6 font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptate rerum, quia maiores earum aliquid illum nulla dolorum nostrum magnam praesentium, sint temporibus veniam. Impedit iure sint hic? Exercitationem, quae?</h3>
+      <v-spacer>
+        <v-divider class="my-4" />
+      </v-spacer>
+
+      <h3 class="text-h6 font-weight-light">歡迎來到 NTTU HACK！</h3>
+      <h3 class="text-h6 font-weight-light">我們是一個致力於推廣資訊安全和駭客文化的社群，旨在提高大眾對於資訊安全的認識和意識，並推廣相關知識和技能。我們的成員來自各個專業和背景，包括資訊科學、網路工程、數學、心理學等等，但我們都有著共同的熱情和使命，那就是保障數位世界的安全。</h3>
       
       </div>
 
