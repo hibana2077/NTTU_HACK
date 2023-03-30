@@ -106,6 +106,7 @@
         },
       })
       const name = useField('name')
+      const student_id = useField('student_id')
       const phone = useField('phone')
       const email = useField('email')
       const select = useField('select')
