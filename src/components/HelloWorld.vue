@@ -2,7 +2,7 @@
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-03-26 07:30:12
  * @LastEditors: hibana2077 hibana2077@gmail.com
- * @LastEditTime: 2023-03-26 22:44:46
+ * @LastEditTime: 2023-04-01 11:33:16
  * @FilePath: \vuetify-project\src\components\HelloWorld.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -51,9 +51,9 @@
         </v-col>
 
         <v-col cols="auto">
-          <router-link to="/blog" class="text-decoration-none" style="color: inherit;">
           <div ref="reverse_avatar_rotate">
           <v-btn
+            href="https://nttu-hack-blog.fly.dev/"
             color="primary"
             min-width="228"
             rel="noopener noreferrer"
@@ -72,7 +72,6 @@
           
           </v-btn>
           </div>
-          </router-link>
         </v-col>
 
         <v-col cols="auto">
