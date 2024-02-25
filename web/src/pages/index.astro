@@ -34,7 +34,7 @@ import Footer from '../layouts/Footer.astro';
 	<p class="text-2xl font-bold">活動</p>
 </div>
 
-<div class="mx-4 my-4">
+<div class="mx-4 mt-4 mb-10">
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 		<div class="card shadow-lg shadow-cyan-500/50">
 			<figure>
@@ -75,5 +75,44 @@ import Footer from '../layouts/Footer.astro';
 	</div>
 </div>
 
+<div class="divider mx-2 my-4" id="faq">
+	<p class="text-2xl font-bold">常見問題</p>
+</div>
+
+<div class="my-4 max-w-4xl mx-auto">
+	<div class="collapse collapse-plus bg-base-200 mb-2">
+		<input type="radio" name="my-accordion-3" checked="checked" /> 
+		<div class="collapse-title text-xl font-medium">
+			加入資安社團需要滿足哪些條件？
+		</div>
+		<div class="collapse-content"> 
+		  <p>
+			我們歡迎所有對資訊安全有興趣的人加入！無論您是資安領域的新手還是有經驗的專業人士，只要您願意學習和分享知識，就可以加入我們。
+		  </p>
+		</div>
+	</div>
+	<div class="collapse collapse-plus bg-base-200 mb-2">
+		<input type="radio" name="my-accordion-3" /> 
+		<div class="collapse-title text-xl font-medium">
+			加入社團後，我需要承擔哪些責任？
+		</div>
+		<div class="collapse-content"> 
+		  <p>
+			我們期望社團成員能夠積極參與社團活動，包括定期參加會議、分享資安知識和經驗。同時，我們鼓勵成員遵守社團的守則和倫理準則，維護一個健康、互相學習和尊重的社群環境。
+		  </p>
+		</div>
+	</div>
+	<div class="collapse collapse-plus bg-base-200 mb-2">
+		<input type="radio" name="my-accordion-3" /> 
+		<div class="collapse-title text-xl font-medium">
+			加入資安社團有什麼好處？
+		</div>
+		<div class="collapse-content"> 
+		  <p>
+			加入資安社團後，您將有機會參加專業的資安培訓、工作坊和研討會，與同行交流經驗，並獲得最新的資安資訊和技術。此外，您還可以與資安領域的專業人士建立聯繫，擴大您的專業網絡。
+		  </p>
+		</div>
+	</div>
+</div>
 
 <Footer />
