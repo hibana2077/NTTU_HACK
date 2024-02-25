@@ -1,48 +1,15 @@
 ---
 const hero_bg_image = "https://images.unsplash.com/photo-1563863251222-11d3e3bd3b62?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const lecture_bg_image = "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const CTF_bg_image = "https://images.unsplash.com/photo-1641765170634-4240fede7a17?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const club_bg_image = "https://images.unsplash.com/photo-1568333261345-0918efdce2d9?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 const start_year = 2022;
 let now_year = new Date().getFullYear();
+
+import Navbar from '../layouts/Navbar.astro';
 ---
 <meta charset="utf-8" />
-<div class="navbar bg-neutral rounded-b-2xl">
-	<div class="navbar-start">
-	  <div class="dropdown">
-		<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-		  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-		</div>
-		<ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-		  <li><a>介紹</a></li>
-		  <li><a>活動</a></li>
-		  <li>
-			<a>更多</a>
-			<ul class="p-2">
-			  <li><a>歷屆幹部</a></li>
-			  <li><a>合作夥伴</a></li>
-			</ul>
-		  </li>
-		</ul>
-	  </div>
-	  <a class="btn btn-ghost text-xl">東大資安社</a>
-	</div>
-	<div class="navbar-center hidden lg:flex">
-	  <ul class="menu menu-horizontal text-lg">
-		<li><a>介紹</a></li>
-		<li><a>活動</a></li>
-		<li>
-			<details>
-			  <summary>更多</summary>
-			  <ul class="p-2 text-sm">
-				<li><a>歷屆幹部</a></li>
-				<li><a>合作夥伴</a></li>
-			  </ul>
-			</details>
-		</li>
-	  </ul>
-	</div>
-	<div class="navbar-end pr-1">
-	  <a class="btn btn-outline hover:btn-ghost">Join Us</a>
-	</div>
-</div>
+<Navbar />
 
 <div class="hero min-h-screen my-2 rounded-lg mx-1" style=`background-image: url(${hero_bg_image});`>
 	<div class="hero-overlay bg-opacity-60"></div>
@@ -50,9 +17,62 @@ let now_year = new Date().getFullYear();
 	  <div class="max-w-md">
 		<h1 class="mb-5 text-5xl font-bold text-start">Hello there</h1>
 		<h1 class="mb-5 text-4xl font-bold text-start">This is NTTU HACK</h1>
-		<p class="mb-5">我們是一個致力於推廣資訊安全和駭客文化的社群，旨在提高大眾對於資訊安全的認識和意識，並推廣相關知識和技能。我們的成員來自各個專業和背景，包括資訊科學、網路工程、數學、心理學等等，但我們都有著共同的熱情和使命，那就是保障數位世界的安全。</p>
-		<button class="btn btn-primary">Join Us</button>
+		<p class="mb-5">我們是一個致力於推廣資訊安全和駭客文化的校園社團，旨在提高大眾對於資訊安全的認識和意識，並推廣相關知識和技能。我們的成員來自各個專業和背景，包括資訊科學、網路工程、數學、心理學等等，但我們都有著共同的熱情和使命，那就是保障數位世界的安全。</p>
+		<div class="relative inline-flex  group">
+			<div
+				class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+			</div>
+			<a href="#" title="Get quote now"
+				class="relative inline-flex items-center justify-center px-4 py-2 text-base font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+				role="button">Join Us
+			</a>
+		</div>
 	  </div>
+	</div>
+</div>
+
+<div class="divider" id="activities">
+	<p class="text-2xl font-bold">活動</p>
+</div>
+
+<div class="mx-4 my-2">
+	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+		<div class="card">
+			<figure>
+				<img src={lecture_bg_image} alt="Placeholder image" class="w-full rounded-t-lg max-h-72" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title">資安講座＆工作坊</h2>
+				<p>我們定期舉辦資安講座，邀請業界專家和學術研究者來分享最新的資訊安全技術和趨勢。</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-primary">More</button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<figure>
+				<img src={CTF_bg_image} alt="Placeholder image" class="w-full rounded-t-lg max-h-72" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title">CTF比賽</h2>
+				<p>我們定期舉辦CTF比賽，讓成員有機會實戰應用資訊安全知識和技能，並與其他社團和學校進行交流。</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-primary">More</button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<figure>
+				<img src={club_bg_image} alt="Placeholder image" class="w-full rounded-t-lg max-h-72" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title">每週社課</h2>
+				<p>我們每週舉辦社課，內容包括資安基礎知識、網路攻防技術、CTF解題等等，適合各種程度的成員參與。</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-primary">More</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
