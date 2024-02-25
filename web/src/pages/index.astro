@@ -30,13 +30,13 @@ import Footer from '../layouts/Footer.astro';
 	</div>
 </div>
 
-<div class="divider" id="activities">
+<div class="divider mx-2" id="activities">
 	<p class="text-2xl font-bold">活動</p>
 </div>
 
-<div class="mx-4 my-2">
+<div class="mx-4 my-4">
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-		<div class="card">
+		<div class="card shadow-lg shadow-cyan-500/50">
 			<figure>
 				<img src={lecture_bg_image} alt="Placeholder image" class="w-full rounded-t-lg max-h-72" />
 			</figure>
@@ -48,7 +48,7 @@ import Footer from '../layouts/Footer.astro';
 				</div>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card shadow-lg shadow-cyan-500/50">
 			<figure>
 				<img src={CTF_bg_image} alt="Placeholder image" class="w-full rounded-t-lg max-h-72" />
 			</figure>
@@ -60,7 +60,7 @@ import Footer from '../layouts/Footer.astro';
 				</div>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card shadow-lg shadow-cyan-500/50">
 			<figure>
 				<img src={club_bg_image} alt="Placeholder image" class="w-full rounded-t-lg max-h-72" />
 			</figure>
@@ -74,5 +74,6 @@ import Footer from '../layouts/Footer.astro';
 		</div>
 	</div>
 </div>
+
 
 <Footer />
