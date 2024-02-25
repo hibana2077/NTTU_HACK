@@ -1,17 +1,71 @@
 ---
 import Navbar from '../layouts/Navbar.astro';
 import Footer from '../layouts/Footer.astro';
+
+const SITCON_LOGO_url = "https://hackersir.org/2022/static/image/sitcon.png";
+const AIS3_LOGO_url = "https://hackersir.org/2022/static/image/AIS3.png";
+const NTTU_CSIE_LOGO_url = "https://media.discordapp.net/attachments/609719384390369281/1211237027714957362/223404414_1091476527927944_1135991170756270780_n.png?ex=65ed7763&is=65db0263&hm=0f993eac04b3647c6c25fd0234e910a5da21d2db78d55172fa8dd72fdda31204&=&format=webp&quality=lossless";
+const partner_image_url = "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 ---
 <meta charset="utf-8" />
 <Navbar />
 
 <main>
-  <section class="hero">
-    <div class="container text-center min-h-screen">
-      <h1 class="text-6xl font-bold mt-6">404</h1>
-      <p>Page not found</p>
+    <div class="row mx-8 mt-4 mb-4">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="col-span-1">
+                <div class="flex flex-col justify-center h-full">
+                    <h1 class="text-4xl font-bold">合作夥伴們</h1>
+                    <p class="text-lg mt-4">我們有許許多多的合作夥伴，他們來自世界各地、四面八方。</p>
+                    <p class="text-lg mt-4">感謝有他們，和我們並肩走來 !</p>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <img src={partner_image_url} alt="Partner" class="w-full h-full object-cover rounded-xl opacity-60" />
+            </div>
+        </div>
     </div>
-  </section>
+
+    <div class="divider mx-8"></div>
+
+    <div class="row mx-8 mt-4 mb-4">
+        <div class="outline outline-offset-2 outline-2 outline-gray-500 min-h-60 rounded-xl">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="col-span-1 mx-auto my-8">
+                    <img src={NTTU_CSIE_LOGO_url} alt="NTTU CSIE" class="w-48 h-48 object-cover rounded-full" />
+                </div>
+                <div class="col-span-3 mr-2">
+                    <h1 class="text-4xl font-bold mt-4">NTTU CSIE</h1>
+                    <h1 class="text-4xl font-bold">國立台東大學 資訊工程學系</h1>
+                    <p class="text-lg mt-4">以奠定學生在資訊工程與計算機科學領域的基礎學養與專業能力為主要目標。我們也提供了更多的學習空間、更符合產業需求的課程設計、導入了 CDIO 的專題課程上課方式、提供學生四年級的產業實習課程等、更便利的的雲端服務、校園行動應用方案與教學資源等。</p>
+                </div>
+            </div>
+        </div>
+        <div class="outline outline-offset-2 outline-2 outline-gray-500 min-h-60 rounded-xl mt-4">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="col-span-1 mx-auto my-8">
+                    <img src={AIS3_LOGO_url} alt="AIS3" class="w-48 h-48 object-cover rounded-full" />
+                </div>
+                <div class="col-span-3 mr-2">
+                    <h1 class="text-4xl font-bold mt-4">AIS3</h1>
+                    <h1 class="text-4xl font-bold">教育部先進資通安全實務人才培育</h1>
+                    <p class="text-lg mt-4">邀請具資安實務與國際資安競賽實戰經驗之國內外專家學者進行授課， 透過資訊安全實務(或實戰)之經驗分享與演練， 提升本課程學員之資安實務的能力與深度。</p>
+                </div>
+            </div>
+        </div>
+        <div class="outline outline-offset-2 outline-2 outline-gray-500 min-h-60 rounded-xl mt-4">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="col-span-1 mx-auto my-8">
+                    <img src={SITCON_LOGO_url} alt="SITCON" class="w-48 h-48 object-cover rounded-full" />
+                </div>
+                <div class="col-span-3 mr-2">
+                    <h1 class="text-4xl font-bold mt-4">SITCON</h1>
+                    <h1 class="text-4xl font-bold">學生計算機年會</h1>
+                    <p class="text-lg mt-4">SITCON 學生計算機年會，由對資訊抱持熱誠的學生們所組成的同名社群自發籌辦，希望能透過技術與知識的激盪，給予學生們一個用自身力量實踐夢想的舞台。本屆年會之主軸聚焦於真正的駭客精神，The True Hackers 。希望讓大家瞭解駭客精神的中心思想，以及駭客精神在各個領域的展現。</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <Footer />
