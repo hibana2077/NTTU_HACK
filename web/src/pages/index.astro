@@ -1,18 +1,29 @@
 ---
-const hero_bg_image = "https://images.unsplash.com/photo-1563863251222-11d3e3bd3b62?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 const lecture_bg_image = "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 const CTF_bg_image = "https://images.unsplash.com/photo-1641765170634-4240fede7a17?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 const club_bg_image = "https://images.unsplash.com/photo-1568333261345-0918efdce2d9?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
+// console.log(document.documentElement.dataset.theme);
+
 import Navbar from '../layouts/Navbar.astro';
 import Footer from '../layouts/Footer.astro';
 ---
-<meta charset="utf-8" />
-<html data-theme="dark">
+<script>
+	const dark_hero_bg_image = "https://images.unsplash.com/photo-1563863251222-11d3e3bd3b62?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+	const light_hero_bg_image = "https://images.unsplash.com/photo-1708724195876-1156245fce21?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8";
+	const bg_img = getComputedStyle(document.documentElement).getPropertyValue('color-scheme') === 'dark' ? dark_hero_bg_image : light_hero_bg_image;
+	console.log(getComputedStyle(document.documentElement).getPropertyValue('color-scheme'));
+	const bgElement = document.getElementById('bg');
+	if (bgElement) {
+		bgElement.style.backgroundImage = `url(${bg_img})`;
+	}
+</script>
+<meta charset="utf-8"/>
 <Navbar />
 
-<div class="hero min-h-screen my-2 mx-1" style=`background-image: url(${hero_bg_image});`>
-	<div class="hero-overlay bg-opacity-60"></div>
+<div class="mx-2">
+<div class="hero min-h-screen my-2 mx-auto" id="bg">
+	<div class="hero-overlay dark:bg-opacity-60"></div>
 	<div class="hero-content">
 	  <div class="max-w-md">
 		<h1 class="mb-5 text-5xl font-bold text-start">Hello there</h1>
@@ -29,6 +40,7 @@ import Footer from '../layouts/Footer.astro';
 		</div>
 	  </div>
 	</div>
+</div>
 </div>
 
 <div class="divider mx-2" id="activities">
@@ -117,4 +129,3 @@ import Footer from '../layouts/Footer.astro';
 </div>
 
 <Footer />
-</html>
