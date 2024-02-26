@@ -10,7 +10,7 @@ import Footer from '../layouts/Footer.astro';
 ---
 <script>
 	const dark_hero_bg_image = "https://images.unsplash.com/photo-1563863251222-11d3e3bd3b62?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-	const light_hero_bg_image = "https://images.unsplash.com/photo-1708724195876-1156245fce21?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8";
+	const light_hero_bg_image = "https://images.unsplash.com/photo-1600431521340-491eca880813?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 	const bg_img = getComputedStyle(document.documentElement).getPropertyValue('color-scheme') === 'dark' ? dark_hero_bg_image : light_hero_bg_image;
 	console.log(getComputedStyle(document.documentElement).getPropertyValue('color-scheme'));
 	const bgElement = document.getElementById('bg');
