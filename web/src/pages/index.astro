@@ -8,9 +8,10 @@ import Navbar from '../layouts/Navbar.astro';
 import Footer from '../layouts/Footer.astro';
 ---
 <meta charset="utf-8" />
+<html data-theme="dark">
 <Navbar />
 
-<div class="hero min-h-screen my-2 rounded-lg mx-1" style=`background-image: url(${hero_bg_image});`>
+<div class="hero min-h-screen my-2 mx-1" style=`background-image: url(${hero_bg_image});`>
 	<div class="hero-overlay bg-opacity-60"></div>
 	<div class="hero-content">
 	  <div class="max-w-md">
@@ -116,3 +117,4 @@ import Footer from '../layouts/Footer.astro';
 </div>
 
 <Footer />
+</html>
